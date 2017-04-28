@@ -1,0 +1,8 @@
+<h1>{{question.title}}</h1>
+<h3>Posted by {{question.author}} on {{question.date}}</h3>
+
+<h4>Question</h4>
+{{question.body}}
+<br>
+
+<button {{action 'delete' question}}>Delete</button>

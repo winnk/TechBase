@@ -1,17 +1,17 @@
 <h1>Techbase</h1>
-<h4>Your place for crowsourcing programming info</h4>
+<h4>Crowsourcing programming information</h4>
+
 <ul>
-
-  <!-- {{#each model as |question|}}
-    {{question-tile update="update" destroyQuestion="destroyQuestion"}}
-  {{/each}} -->
-
   {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+    {{question-tile question=question}}
   {{/each}}
+  <br>
 </ul>
 
+<hr>
 {{new-question saveQuestion2="saveQuestion3"}}
+<hr>
+<br>
 
 {{#link-to 'about'}}Click here to learn about us.{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
