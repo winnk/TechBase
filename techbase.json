@@ -1,0 +1,26 @@
+{ "questions": [{
+    "author": "Bonny Miller",
+    "title": "What's with all the dependencies",
+    "body": "When I look at github in my project I see thousands of files loaded. It's only a few kilobytes but why are there so many little files?",
+    "date": "03/05/2017"
+    }, {
+    "author": "Jack Benny",
+    "title": "Is programming on Windows reasonable?",
+    "body": "This is a call out to people who have programmed on both Mac and Windows. I want to know if the focus of programmig will be on web and Android is it reasonable to program on Windows or is Mac the recommended platform?",
+    "date": "05/15/2016"
+  }, {
+    "author": "Jack Black",
+    "title": "What is the future for ReactJS developers?",
+    "body": "If a person is only a Reactjs developer, should they worry. Or if the person is only angularjs developer, should they worry?",
+    "date": "10/09/2016"
+    }],
+  "reviews": [{
+    "content": "Don’t learn the framework. Be the JavaScript Developer. You would have a piece of mind.",
+    "author": "Bixby",
+    "date": "10/10/2016"
+  }, {
+    "content": "Enough of Philosophy. Reactjs will also be turned down by some other framework (somewhere near the future). I think Angular 2 is again competing with it.",
+    "author": "Daniel",
+    "date": "10/11/2016"
+  }]
+}
