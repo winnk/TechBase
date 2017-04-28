@@ -1,3 +1,17 @@
+<div class= "container">
+  <header class= "jumbotron  medium">
+    <!-- <img src="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/07/techbase-225-Blue.png" /> -->
+    <h1>Techbase</h1>
+    <h4>Nerd mind crowdsourcing</h4>
+    <br>
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Contact{{/link-to}}
 
-
-{{outlet}}
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'contact'}}Drop us a line{{/link-to}}
+  </footer>
+</div>

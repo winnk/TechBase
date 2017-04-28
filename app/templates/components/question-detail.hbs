@@ -1,8 +1,15 @@
 <h1>{{question.title}}</h1>
-<h3>Posted by {{question.author}} on {{question.date}}</h3>
+<h4 >{{question.date}} by {{question.author}} </h4>
 
-<h4>Question</h4>
-{{question.body}}
+<h4><strong>Question: </strong> {{question.body}}</h4>
+
 <br>
+<h2> Responses </h2>
+<ul>
+  {{#each question.comments as |comment|}}
+    {{question-tile comment=comment}}
+  {{/each}}
+</ul>
+
 
 <button {{action 'delete' question}}>Delete</button>

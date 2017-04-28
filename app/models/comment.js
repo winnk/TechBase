@@ -2,8 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   author: DS.attr(),
-  body: DS.attr(),
+  content: DS.attr(),
   date: DS.attr(),
-  title: DS.attr(),
-  comments: DS.hasMany('review', {async: true})
+  question: DS.belongsTo('rental', { async: true })
 });
