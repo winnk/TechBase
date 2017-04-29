@@ -1,7 +1,7 @@
-<h2>Details about {{model.title}}</h2>
 
+{{new-comment saveComment="saveComment" question=model}}
+<br>
+<hr>
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
 
 {{update-question question=model update="update"}}
-
-{{new-comment saveComment="saveComment" question=model}}

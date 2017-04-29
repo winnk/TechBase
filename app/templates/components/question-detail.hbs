@@ -1,15 +1,19 @@
-<h1>{{question.title}}</h1>
-<h4 >{{question.date}} by {{question.author}} </h4>
+<h2>{{question.title}}</h2>
+<h5 >{{question.date}} </h5><br>
 
-<h4><strong>Question: </strong> {{question.body}}</h4>
+<h4><strong>{{question.author}} asks: </strong></h4><br>
+<p>
+  {{question.body}}
+</p>
 
 <br>
 <h2> Responses </h2>
 <ul>
   {{#each question.comments as |comment|}}
-    {{question-tile comment=comment}}
+    {{comment-tile comment=comment}}
   {{/each}}
 </ul>
 
-
-<button {{action 'delete' question}}>Delete</button>
+<hr>
+<h4>Manage Question</h4>
+<button {{action 'delete' question}}>Delete Question</button>
