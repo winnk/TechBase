@@ -1,7 +1,9 @@
+<div class="newComment">
+
 {{#if addNewComment}}
 <h1>New Comment</h1>
   <div>
-    <form>
+    <form class="newComment">
       <div class="form-group">
         <label for="author">Author</label>
         {{input value=author id="author"}}
@@ -18,5 +20,7 @@
     </form>
   </div>
 {{else}}
+<br>
   <button {{action 'commentFormShow'}}>New Comment</button>
 {{/if}}
+</div>

@@ -1,17 +1,36 @@
-<div class= "container">
-  <header class= "jumbotron  medium">
+<!-- <div class= "container">
+  <header class= "jumbotron  medium"> -->
     <!-- <img src="https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/07/techbase-225-Blue.png" /> -->
-    <h1>Techbase</h1>
-    <h4>Nerd mind crowdsourcing</h4>
-    <br>
-    {{#link-to 'index'}}Home{{/link-to}}
-    {{#link-to 'about'}}About{{/link-to}}
-    {{#link-to 'contact'}}Contact{{/link-to}}
+    <!-- <h1>Techbase</h1>
+    <h4>Nerd mind crowdsourcing</h4> -->
+  <div id="main">
+  <div id="header">
+  <div id="logo">
+    <div id="logo_text">
+      <!-- class="logo_colour", allows you to change the colour of the text -->
+      <h1>Tech<span class="logo_colour">base</span></h1>
+      <h2>Coding questions and community resources</h2>
+    </div>
+    </div>
 
-  </header>
-    {{outlet}}
+    <div id="menubar">
+      <ul id="menu">
+        <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+        <li class="selected">{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+      </ul>
+    </div>
+
+  </div>
+    <!-- {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Contact{{/link-to}} -->
+  {{outlet}}
+</div>
+
+
   <hr>
-  <footer>
+  <footer class="foot">
     {{#link-to 'contact'}}Drop us a line{{/link-to}}
   </footer>
-</div>

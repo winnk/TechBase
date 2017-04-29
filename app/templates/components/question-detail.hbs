@@ -6,14 +6,26 @@
   {{question.body}}
 </p>
 
-<br>
+<div style="width: 100%; height: 5px; background: rgb(232, 160, 55); overflow: hidden;"></div>
 <h2> Responses </h2>
 <ul>
   {{#each question.comments as |comment|}}
     {{comment-tile comment=comment}}
   {{/each}}
 </ul>
-
-<hr>
+<script>if (questions.comments !=n null){
+<ul>
+  {{#each question.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+}else{
+  <h3>No comments yet</h3>
+}
+</script>
+<div class="manageQuestion">
 <h4>Manage Question</h4>
 <button {{action 'delete' question}}>Delete Question</button>
+</div>
+
+<hr>
