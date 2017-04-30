@@ -14,18 +14,18 @@
   {{/each}}
 </ul>
 <script>if (questions.comments !=n null){
-<ul>
-  {{#each question.comments as |comment|}}
+  <ul>
+    {{#each question.comments as |comment|}}
     {{comment-tile comment=comment}}
   {{/each}}
-</ul>
+  </ul>
 }else{
   <h3>No comments yet</h3>
 }
 </script>
 <div class="manageQuestion">
-<h4>Manage Question</h4>
-<button {{action 'delete' question}}>Delete Question</button>
+  <h4>Manage Question</h4>
+  <button {{action 'delete' question}}>Delete Question</button>
 </div>
 
 <hr>

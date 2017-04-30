@@ -4,16 +4,15 @@
     <!-- <h1>Techbase</h1>
     <h4>Nerd mind crowdsourcing</h4> -->
   <div id="main">
-  <div id="header">
-  <div id="logo">
-    <div id="logo_text">
+   <div id="header">
+    <div id="logo">
+     <div id="logo_text">
       <!-- class="logo_colour", allows you to change the colour of the text -->
       <h1>Tech<span class="logo_colour">base</span></h1>
       <h2>Coding questions and community resources</h2>
+     </div>
     </div>
-    </div>
-
-    <div id="menubar">
+   <div id="menubar">
       <ul id="menu">
         <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
         <li class="selected">{{#link-to 'index'}}Home{{/link-to}}</li>
@@ -21,15 +20,12 @@
         <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
       </ul>
     </div>
-
   </div>
     <!-- {{#link-to 'index'}}Home{{/link-to}}
     {{#link-to 'about'}}About{{/link-to}}
     {{#link-to 'contact'}}Contact{{/link-to}} -->
-  {{outlet}}
-</div>
-
-
+    {{outlet}}
+  </div>
   <hr>
   <footer class="foot">
     {{#link-to 'contact'}}Drop us a line{{/link-to}}
