@@ -1,5 +1,9 @@
 # ![TechBase](https://2xbbhjxc6wk3v21p62t8n4d4-wpengine.netdna-ssl.com/wp-content/uploads/2015/07/techbase-225-Blue.png)
 
+[![Build Status](https://travis-ci.org/anfederico/Clairvoyant.svg?branch=master)](https://travis-ci.org/anfederico/Clairvoyant)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+[![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
 ## Techbase is a discussion forum where junior developers can post questions or topics and receive feedback from the tech community.
 
 ## Prerequisites
@@ -13,7 +17,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone this` [repository] `
+* `git clone this`[repository]` https://img.shields.io/travis/USER/REPO.svg
 * `cd techbase`
 * `npm install`
 * `bower install`
